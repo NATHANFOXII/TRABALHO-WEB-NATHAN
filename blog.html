@@ -1,0 +1,184 @@
+<!DOCTYPE html> <!-- Define que o documento ý HTML5 -->
+<html lang="pt-BR"> <!-- Inicia o HTML e define o idioma como portuguýs do Brasil -->
+<head> <!-- Inýcio da ýrea de configuraýýes da pýgina -->
+    <meta charset="UTF-8"> <!-- Permite usar caracteres especiais como ý e acentos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Torna o site responsivo em celulares -->
+    <title>The RED queen</title> <!-- Define o týtulo que aparece na aba do navegador -->
+    <link rel="stylesheet" href="style.css"> <!-- Conecta o arquivo CSS externo -->
+</head> <!-- Fim da area de configurações -->
+<body> <!-- Inýcio do conteýdo visivel da pýgina -->
+
+<header> <!-- Cabeýalho do blog --> 
+
+<div class="logo">
+  <a href="blog.html"> <!-- o a serve como link ao clicar volta para home -->
+  <img src="imagens_sabugo/logo.jpg" alt="logo do projeto"> <!-- 'img' carrega a imagem da logo (em andamento) e 'alt' descreve a imagem-->
+  </a>
+    </div>
+  <nav>
+    
+     </nav>
+
+  <h1>Meu Blog Pessoal</h1> <!-- Týtulo principal -->
+    <p>Bem-vindo ao meu espaýo na internet! (em obras) </p> <!-- Subtýtulo -->
+
+<picture>
+ <source media="(max-width: 768px)" srcset="imagens_sabugo/Banner_mobile.jpg"> <!-- se a tela do aparelho for mýximo de 768 pixels sera uma banner-->
+ <source media="(min-width: 769px)" srcset="imagens_sabugo/Banner_desktop.jpg"> <!-- se a tela for maior que 768 pixels sera outro banner-->
+ <img src="imagens_sabugo/Banner_desktop.jpg" alt="Banner Principal"> <!-- quando nenhuma regra se aplicar esse banner ý o principal-->
+  
+</picture>
+
+</header> <!-- Fim do cabeýalho -->
+
+<nav> <!-- Menu de navegaýýo -->
+    <a href="#">Inýcio</a> <!-- Link fictýcio para pýgina inicial -->
+    <a href="#">Sobre</a> <!-- Link fictýcio sobre o autor -->
+    <a href="#">Contato</a> <!-- Link fictýcio de contato -->
+
+
+ <aside style="float: right; width: 25%; padding: 10px; background: rgbargba(255, 255, 255, 0.5)"> <!-- cria uma sidebar com links de download-->
+ <h3>Downloads ýteis</h3><ul>
+    <li><a href="LINK_DO_MEGA" target="_blank">O QUE EU JOGUEI</a></li> <!-- "_blank pra abrir o link numa nova guia sem sair do blog" -->
+    
+    <li><a href="LINK_DO_MEDIAFIRE" target="_blank">a ultima coisa que eu li</a></li> <!-- "<li>"define cada item idndividual da lista-->
+    
+    <li><a href="OUTRO_LINK" target="_blank">filme que eu assisti</a></li>
+  </ul> <!-- Cria as bolinhas do lado dos links na lista -->
+
+  </aside> <!-- fim da barra de links -->
+  
+</nav> <!-- Fim do menu -->
+
+<main> <!-- Conteýdo principal -->
+
+<article class="post">  <!-- Inýcio de uma postagem so que com <article> -->
+    <h2>Me Apresentando</h2>  <!-- Týtulo da postagem -->
+    
+    <div class="conteudo-post">  <!-- achar conteudo externo -->
+        <img src="imagens_sabugo/foto_escritor_de_livros.png" alt="as varias faces de mim NATHAN">  <!-- imagem designada e descrição -->
+        
+        <div class="texto-post">  <!-- artigo da postagem -->
+            <p>Me chamo Nathan tenho 22 anos e começei a cursar TADS programção é uma coisa nova para mim, acabei caindo nessa de</p>
+            <p>cabeça e em questão de programar em java >&=5=« esta sendo como pisar em pedras mas estou começando e pegar.</p>
+          <p>esse post serve pra me apresentar e confeço que gostei de programar isso do zerpo tanto que manterei o projeto e vou</p>
+          <p> tentar aprimorar esse blog.</p>
+        </div>
+    </div>
+    
+    <button onclick="curtirPost()">Curtir</button><!-- Botýo que chama funýýo JavaScript -->
+</article>  <!-- Fim da postagem -->
+
+
+<article class="post">  <!-- Inýcio de uma postagem so que com <article> -->
+    <h2>Meus Hobbies</h2>  <!-- Týtulo da postagem -->
+    
+    <div class="conteudo-post">  <!-- achar conteudo externo -->
+        <img src="imagens_sabugo/santa _desafinacao.png" alt="tirando a ferrugem">  <!-- imagem designada e descrição -->
+        
+        <div class="texto-post">  <!-- artigo da postagem -->
+            <p>Eu gosto de emuita coisas mas o que se destaca é desenhar ou tocar guitarra gosto muito de tocar guitarra embora </p>
+            <p>tenho praticado pouco ultimamente com a faculdade e o trabalho mas sempre quando tenho tempo livre componho por </p>
+          <p>por horas não posto minhas músicas mas quem sabe um dia tenho muito amigos com quem ja criei albuns. </p>
+        </div>
+    </div>
+    
+    <button onclick="curtirPost()">Curtir</button><!-- Botýo que chama funýýo JavaScript -->
+</article>  <!-- Fim da postagem -->
+
+
+<article class="post">  <!-- Inýcio de uma postagem so que com <article> -->
+    <h2>Meu gosto musical</h2>  <!-- Týtulo da postagem -->
+    
+    <div class="conteudo-post">  <!-- achar conteudo externo -->
+        <img src="imagens_sabugo/spider_punkrock.jpg" alt="roda punk">  <!-- imagem designada e descrição -->
+        
+        <div class="texto-post">  <!-- artigo da postagem -->
+            <p>eu gosto de rock (surpresa), mas ultimamente tenho ouvido mais o estilo punk embor eu prefira mais o estilo do</p>
+            <p>rock tenho um gosto bem ecletico uma hora ouvindo eletronica outra hora ouvindo bossa nova hahahaha. Mas o que se </p>
+          <p>sobresaiu mais foi o rock desde novo eu ouvi evanecense, nickelback, avril lavgne (minha artista favorita) e </p>
+          <p>link park todas as classicas dos anos 2000 eu ouvia desde criança graças a Deus consegui passar ileso pelos movimen-</p>
+          <P>tos como restart e back street boys hahahaha ainda não sei como consideraram isso punk em vez de grunge.</P>
+        </div>
+    </div>
+    
+    <button onclick="curtirPost()">Curtir</button><!-- Botýo que chama funýýo JavaScript -->
+</article>  <!-- Fim da postagem -->
+
+<article class="post">  <!-- Inýcio de uma postagem so que com <article> -->
+    <h2>Outro Hobbie HQs e mangás</h2>  <!-- Týtulo da postagem -->
+    
+    <div class="conteudo-post">  <!-- achar conteudo externo -->
+        <img src="imagens_sabugo/manga.jpg" alt="não gosto desse manga mas ilustrou bem">  <!-- imagem designada e descrição -->
+        
+        <div class="texto-post">  <!-- artigo da postagem -->
+            <p>além da música gosto também de desenhar as vezes gosto até demais ja fiquei dias em claro só desenhando sem nem </p>
+            <p>perceber hoje em dia com a carne cansada e já mais regrado já não dedico tanto tempo ao desenho mas ainda gosto </p>
+          <p>muito de desenhar, não atoa meu hobbie para isso é desenhar e escrever HQs um hobbie que levo com gosto desde crian-</p>
+          <p>ça. quando fui alfabetizado aos meus 4 anos já começei a fazer HQs e por mais que o tempo passe ainda gosto disso.</p>
+          <p> Gosto também de colecionar quadrinhos ou mangas embora esse ultimo começei recentemente não sou um aficcionado por</p>
+          <p>coleções apenas começei pois funciona para meu lazer de gostar de ler e com o dia atarefado essa mídia é mais de fa-</p>
+          <p>cil consumo rapido de ler leio uma edição por dia no onibus para o trabalho.</p>
+        </div>
+    </div>
+    
+    <button onclick="curtirPost()">Curtir</button><!-- Botýo que chama funýýo JavaScript -->
+</article>  <!-- Fim da postagem -->
+
+
+<article class="post">  <!-- Inýcio de uma postagem so que com <article> -->
+    <h2>leitura! isso é uma coisa boa.</h2>  <!-- Týtulo da postagem -->
+    
+    <div class="conteudo-post">  <!-- achar conteudo externo -->
+        <img src="imagens_sabugo/Garfield_estudo.jpg" alt="ler,ler,ler">  <!-- imagem designada e descrição -->
+        
+        <div class="texto-post">  <!-- artigo da postagem -->
+            <p> Eu gosto muito de ler minha mãe sendo professora de letras foi a principal responsavel por isso hahahaha</p>
+            <p>desde cedo ja me fazia ler livros no inicio eu não gostava mas hoje em dia gosto bastante</p>
+          <p>o que mais me agrada é sentar ou deitar na grama ler um livro e ouvir um rock pesado hahahah. isso quase rivaliza</p>
+          <p>com meu outro prazer cinema</p>
+        </div>
+    </div>
+    
+    <button onclick="curtirPost()">Curtir</button><!-- Botýo que chama funýýo JavaScript -->
+</article>  <!-- Fim da postagem -->
+
+<article class="post">  <!-- Inicio de uma postagem so que com <article> -->
+    <h2>Luz, câmara, AÇÃO</h2>  <!-- Týtulo da postagem -->
+    
+    <div class="conteudo-post">  <!-- achar conteudo externo -->
+        <img src="imagens_sabugo/farol_snoopy.jpg" alt="o farol com snoopy seria outro filme">  <!-- imagem designada e descrição -->
+        
+        <div class="texto-post">  <!-- artigo da postagem -->
+            <p> gosto bastente de filmes claro não o suficiente para ser um cinéfilo mas tenho bastante repertório hahaha </p>
+            <p>gosto de filmes de ação e de suspense mas o que mais gosto são os de suspense policial ou suspense de ficção meus </p>
+          <p>filmes preferidos são donnie darko, pobres criaturas e os homens que não amavam as mulheres</p>
+          <p>com meu outro prazer cinema</p>
+        </div>
+    </div>
+    
+    <button onclick="curtirPost()">Curtir</button><!-- Botýo que chama funýýo JavaScript -->
+</article>  <!-- Fim da postagem -->
+
+
+
+
+
+
+
+
+    <section class="post"> <!--postagem com section funciona igual ao article -->
+        <h2>Aprendendo HTML</h2> <!-- Týtulo -->
+        <p>HTML ý a base da construção de sites.</p> <!-- Texto -->
+        <button onclick="curtirPost()">Curtir</button> <!-- Botýo -->
+    </section> <!-- Fim -->
+
+</main> <!-- Fim do conteýdo principal -->
+
+<footer> <!-- Rodapý -->
+    <p>© 2026 Meu Blog - Todos os direitos reservados</p> <!-- Texto do rodapý -->
+</footer> <!-- Fim do rodapý -->
+
+<script src="script.js"></script> <!-- Conecta o JavaScript externo -->
+</body> <!-- Fim do conteýdo visývel -->
+</html> <!-- Fim do documento HTML -->

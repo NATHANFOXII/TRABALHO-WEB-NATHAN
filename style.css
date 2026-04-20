@@ -1,0 +1,122 @@
+/* Define estilo geral da pýgina */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte do texto */
+    margin: 0; /* Remove margens externas */
+    background-image: url('imagens_sabugo/Background_4.gif'); /* Definia cor de fundo e agora indica onde esta o fundo  */
+  background-attachment: fixed; /* mantem o fundo estatico enquanto desce pelas postagens*/ 
+  background-size: cover; /* preenche todo o fundo */  
+  background-position: center; /* centraliza tudo*/ 
+  padding: 0; /* tira as margens padrýes*/ 
+}
+
+@media (max-width: 768px) {
+    body {
+        background-image: url('imagens_sabugo/Background_3.gif'); /*serve para trocar o fundo para o mobile */
+    }
+}
+
+
+
+/* Estiliza o cabeýalho */
+header {
+    background-color:rgba(51, 51, 51, 0.8); /* Cor de fundo escura */
+    color: white; /* Cor do texto */
+    text-align: center; /* Centraliza texto */
+    padding: 20px; /* Espaýamento interno */
+
+}
+
+/* Estiliza o menu */
+
+  /* Estiliza a logo */
+.logo img {
+    height: 70px;
+    width: auto;
+    margin: 10px;
+}
+
+/* Estiliza o banner que estý no HTML (tag picture) */
+picture img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+/*define o tamanho da logo para nao ocupar todo o espaýo e do banner para ocupar a tela sem espaýos vagos */
+
+nav {
+    background-color: #555; /* Cor de fundo */
+    padding: 10px; /* Espaýamento interno */
+}
+
+/* Estiliza links do menu */
+nav a {
+    color: white; /* Cor texto */
+    margin-right: 15px; /* Espaýo entre links */
+    text-decoration: none; /* Remove sublinhado */
+}
+
+/* Estiliza ýrea principal */
+main {
+    padding: 20px; /* Espaýamento interno */
+}
+
+/* Estiliza cada postagem */
+.post {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+
+/* Esta linha coloca a textura fixa e o !important vence o JavaScript */
+    background-image: url('textura_post _4.jpg') !important;
+  
+    background-size: auto; /* Mantým o tamanho original da textura para ela se repetir */
+    background-repeat: repeat; /* Faz a textura cobrir todo o fundo do post */
+
+  /* Garante que o post tenha fundo caso a imagem demore a carregar */
+    background-color: rgba(255, 255, 255, 0.8);
+
+}
+
+/* Organiza a imagem e o texto lado a lado */
+.conteudo-post {
+    display: flex; /* Ativa o modo de colunas */
+    align-items: flex-start; /* Alinha o topo da imagem com o topo do texto */
+    gap: 20px; /* Cria um espaço entre a imagem e o texto */
+    flex-wrap: wrap; /* Se a tela for pequena (celular), o texto vai para baixo da foto */
+}
+
+/* Garante que a imagem não ocupe a tela toda */
+.conteudo-post img {
+    width: 100%;
+    max-width: 300px; /* Define um tamanho máximo para a foto ao lado do texto */
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Ajusta o texto para ocupar o resto do espaço */
+.texto-post {
+    flex: 1; /* Faz o texto preencher o espaço que sobrar */
+    min-width: 250px; /* Evita que o texto fique muito espremido */
+}
+
+
+/* Estiliza rodapý */
+footer {
+    background-color: #333; /* Cor fundo */
+    color: white; /* Cor texto */
+    text-align: center; /* Centraliza */
+    padding: 10px; /* Espaýamento */
+}
+
+/* Isso muda apenas os links que estao dentro do aside */
+aside a {
+    color: #000000; /* Coloque aqui a cor que voce quer (ex: preto) */
+    text-decoration: none; /* Opcional: tira o sublinhado do link */
+    font-weight: bold; /* Deixa o texto em negrito para destacar */
+}
+
+/* Isso muda a cor quando voce passa o mouse apenas nos links do aside */
+aside a:hover {
+    color: #555555; /* Cor cinza ao passar o mouse */
+    text-decoration: underline; /* Coloca o sublinhado de volta ao passar o mouse */
+}
